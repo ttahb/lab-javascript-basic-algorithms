@@ -35,5 +35,13 @@ for(let i=navigatorName.length-1; i>=0; i--){
 console.log(`Navigator's name in reverse is ${reversedNavigatorName}`);
 
 //3.3
-
+//console.log(driverName.localeCompare(navigatorName));
+let bool = driverName.localeCompare(navigatorName);
+if(bool === 1){
+    console.log("Yo, the navigator goes first, definitely.")
+} else if(bool === -1){
+    console.log("The driver's name goes first.");
+} else {
+    console.log("What?! You both have the same name?");
+}
 
